@@ -5,166 +5,6 @@
 
 /* 공통구역을 제외한 메인페이지 스타일 */
 
-#header {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 9999;
-}
-
-.logo_nav {position: relative; height: 200px;}
-.logo_nav h1 {position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
-.logo_nav h1 img {width: 189px;}
-.logo_nav #nav {
-    position: absolute; top: 50%; right: 0; transform: translateY(-50%);
-    color: #fff;
-}
-.logo_nav #nav > ul > li {
-    display: inline-block; 
-    position: relative;
-    text-align: center;
-}
-.logo_nav #nav > ul > li > a {
-    display: inline-block;
-    position: relative; 
-    padding: 20px 30px 20px; 
-    font-size: 18px; 
-    z-index: 9999;
-    opacity: 0.8;
-    transition: all 0.5s;
-}
-
-.logo_nav #nav > ul > li:hover > a {
-    opacity: 1;
-    text-shadow: 0px 0px 5px #fff;
-}
-
-.logo_nav #nav > ul > li:last-child > a {
-    /* padding: 0; background-color: red; */
-    display: inline-block;
-    margin-left: 15px;
-    padding-left: 20px;
-    padding-right: 15px;
-}
-
-.logo_nav #nav > ul > li:hover > .depth2 {
-    display: block;
-} 
-
-.logo_nav #nav > ul > li > .depth2 {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    /* transform: translateX(-50%); */
-    /* width: 150px; */
-    padding: 55px 0 30px;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 5px;
-}
-
-.logo_nav #nav > ul > li > .depth2 > li {
-    position: relative;
-}
-
-.logo_nav #nav > ul > li > .depth2 > li > a {
-    /* color: white; */
-    display: inline-block;
-    padding: 5px 0;
-    font-size: 14px;
-    opacity: 0.5;
-}
-
-.logo_nav #nav > ul > li > .depth2 > li:hover > a {
-    opacity: 1;
-}
-
-.logo_nav #nav > ul > li > .depth2 > li > a:before {
-    content: 'ㆍ';
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-}
-
-
-
-.logo_nav #nav > ul > li .detail {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0px;
-    padding-top: 20px;
-    width: 700px;
-    height: 210px;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.logo_nav #nav > ul > li:last-child:hover .detail {
-    display: block;
-}
-
-
-.logo_nav #nav ul li .detail > li {
-    display: inline-block;
-    position: relative;
-}
-
-.logo_nav #nav ul li .detail > li:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 100%;
-    background-color: white;
-    opacity: 0.5;
-}
-.logo_nav #nav ul li .detail > li:first-child:before {
-    display: none;
-}
-
-
-.logo_nav #nav > ul > li .detail > li > a {
-    display: inline-block;
-    margin-left: 0;
-    padding-left: 0;
-    font-size: 20px;
-    margin-right: 11px;
-    opacity: 0.5;
-} 
-
-.logo_nav #nav > ul > li .detail > li:hover > a {
-    opacity: 1;
-}
-
-
-.logo_nav #nav ul li .detail > li a {
-    display: inline-block;
-    /* background-color: blueviolet; */
-    padding: 5px 30px;
-    /* margin-right: 15px; */
-}
-
-.logo_nav #nav ul li .detail2 > li a {
-    font-size: 14px;
-    opacity: 0.5;
-}
-
-.logo_nav #nav ul li .detail2 > li:hover a {
-    opacity: 1;
-}
-
-.logo_nav #nav ul li .detail2 > li:last-child a{
-    margin-bottom: 10px;
-}
-
-.logo_nav #nav ul li .detail2 > li a i {
-    margin-right: 5px;
-}
-
 #section {
     width: 100%;
 }
@@ -174,14 +14,14 @@
     position: relative;
     height: 1080px; 
     overflow: hidden;
-    width: 100%;    
+    width: 100%;
 }
 
 #section  .slide-inner > div:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../images/milkyway/bg_1.jpg) no-repeat; 
+    background: url(../images/milkyway/bg_1.jpg) no-repeat 50% 60%; 
     background-size: cover;
     width: 100%;
     height: 1080px; 
@@ -191,7 +31,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* background: url(../images/milkyway/bg_2.jpg) no-repeat;  */
+    background: url(../images/milkyway/bg_2.jpg) no-repeat 50% 60%; 
     background-size: cover;
     width: 100%;
     height: 1080px; 
@@ -201,38 +41,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* background: url(../images/milkyway/bg_4.jpg) no-repeat;  */
+    background: url(../images/milkyway/bg_4.jpg) no-repeat 50% 60%  ; 
     background-size: cover;
     width: 100%;
     height: 1080px; 
 }
 
 
-#section .slide-inner .text {
+#section .slide-inner .main-text {
     color: #fff;
     font-size: 60px;
     font-family: 'Nanum Pen Script', cursive;
+    text-transform: uppercase;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: 2s fadeIn;
-}
-
-#section .slide-inner .text:hover {
-    text-shadow: 0 0 3px #fff;
+    animation: 2s fadeIn,  1.2s 2s infinite twinkle;
     cursor: default;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translate(-50%, -100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(-50%,-50%);
-    }
 }
 
 #section .slide-outer .arr {
@@ -281,7 +107,7 @@
 }
 
 #section .part1-wrap {
-    padding: 70px 0;
+    padding: 100px 0;
 }
 
 #section .part1-wrap .board,
@@ -355,12 +181,203 @@
     padding-left: 25px;
 }
 
-#section .part2 {
-    padding: 60px 0;
+
+#section .part2-wrap {
+    background: url(../images/milkyway/galaxy.jpg) no-repeat center bottom;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
-#section .part2 .box-wrap {
+#section .part2-wrap .part2-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0.9;
+    font-size: 40px;
+    text-transform: capitalize;
+    animation: 1s twinkle infinite;
+    cursor: default;
+    letter-spacing: 7px;
+}
+#section .part2-wrap button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    background: none;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#section .part2-wrap button:hover {
+    opacity: 1;
+    background: #fff;
+    transition: all 0.3s;
+    color: #000;
+}
+
+#section .part3 {
+    padding: 150px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#section .part3 .box-wrap {
+    float: left;
+}
+
+#section .part3 .box-text-wrap {
+    width: 380px;
+    height: 380px;
+    background-color: #fff;
+}
+
+
+#section .part3 .box-img {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+}
+
+#section .part3 .box-wrap:nth-child(1) .box-img {
+    background: url(../images/milkyway/star1.jpg) no-repeat 50% 50%;
+}
+
+#section .part3 .box-wrap:nth-child(2) .box-img {
+    background: url(../images/milkyway/star2.jpg) no-repeat 0% 20%;
+}
+
+#section .part3 .box-wrap:nth-child(3) .box-img {
+    background: url(../images/milkyway/star3.jpg) no-repeat 50% 80%;
+}
+
+
+#section .part3 .box-img img {
+    transition: ease-in-out 0.8s ;
+}
+
+#section .part3 .box-img:hover img {
+    transform: scale(1.1);
+}
+
+#section .part3 .box-img .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 2px 5px #555, 0 0 5px #fff;
+    text-transform: uppercase;
+    z-index: 9;
+
+}
+
+#section .part3 .box-text-wrap {
+    position: relative;
+}
+
+#section .part3 .box-text-wrap .box-text {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#section .part3 .box-text-wrap h3 {
+    color: #424242;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #999;
+    text-align: left;
+    padding-bottom: 15px;
+}
+#section .part3 .box-text-wrap p {
+    line-height: 24px;
+    font-size: 14px;
+    color: #6c6c6c;
+}
+
+#section .part4 {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+#section .part4 .vid:before {
+    content: '';
+    background: rgba(255, 255, 255,0.4);
+    /* background를 그라데이션으로 주고싶어 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+} 
+
+#section .part4 video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#section .part5 {
+    text-align: center;
+    padding: 130px 0;
+    text-transform: capitalize;
+}
+
+#section .part5 > h3 {
+    color: #555;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+#section .part5 > p {
+    font-size: 25px;
+    color: #252525;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    
+}
+
+#section .part5 .part5-box {
     display: inline-block;
     width: 30%;
-    margin: 0 1%;
 }
+
+#section .part5 .part5-box i {
+    font-size: 60px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+
+#section .part5 .part5-box span {
+    display: block;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+#section .part5 .part5-box p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* part5 border timing function 삽입 예정 */
