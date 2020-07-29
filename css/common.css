@@ -42,9 +42,20 @@ font-family: 'Nanum Pen Script', cursive; */
     }   
 }
 
+@keyframes up {
+    0% {
+        transform: translate(-50%, 50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+}
 
 #header {
-    position: fixed;
+    position: absolute;
+    /* positon: fixed */
     width: 100%;
     left: 0;
     top: 0;
@@ -201,4 +212,33 @@ font-family: 'Nanum Pen Script', cursive; */
 
 .logo_nav #nav ul li .detail2 > li a i {
     margin-right: 5px;
+}
+
+.icon-up {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    font-size: 35px;
+    color: rgba(134, 134, 134, 0.9);
+    z-index: 999999;
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 999999;
+}
+
+.loader i {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    color: #fff;
+    font-size: 40px;
 }
