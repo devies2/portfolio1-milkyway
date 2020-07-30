@@ -22,20 +22,21 @@
         <a href="#section">본문바로가기</a>
     </div>
     <header id="header">
-        <!-- topmenu 보류 -->
         <div class="row">
             <div class="topmenu cf">
-                <!-- <div class="search-box"">
-                    <form action="#" method="post">
-                        <fieldset>
-                            <legend>검색창</legend>
-                            <input type="text" style="width:50px; background: none; border-bottom: 1px solid white;" placeholder="검색">
-                            <button type="submit">
-                                <i class="fas fa-plus-circle" style="color: white; font-size: 20px;"></i>
-                            </button>
-                        </fieldset>
+                <div class="search-box"">
+                    <form action=" #" method="post">
+                    <fieldset>
+                        <legend>검색창</legend>
+                        <input type="text" placeholder="Search" onfocus="this.placeholder=''"
+                            onblur="this.placeholder='Search'">
+                        <button type="submit">
+                            <span class="blind"> 클릭해서 검색하기 </span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </fieldset>
                     </form>
-                </div> -->
+                </div>
                 <div class="icon_sns">
                     <a href="#">
                         <i class="fab fa-twitter"></i>
@@ -66,7 +67,9 @@
         <div class="logo_nav row">
             <h1>
                 <a href="#">
-                    <img src="./images/logo.png" alt="">
+                    <div>
+                        <span class="blind">MilkyWay</span>
+                    </div>
                 </a>
             </h1>
             <nav id="nav">
@@ -316,7 +319,7 @@
                 </div>
             </div>
         </article>
-        
+
         <article class="part2">
             <div class="part2-wrap">
                 <div class="part2-text">
@@ -412,101 +415,103 @@
             <h3>Lorem ipsum dolor sit</h3>
             <p>Perspiciatis provident amet veli </p>
             <div class="part5-box">
-
-                <i class="fas fa-barcode"></i>
-                <span>flowing milky way</span>
-                <p>Lorem ipsum dolor, sit amet consectetur <br>
-                    adipisicing elit. Delectus obcaecati</p>
+                <div class="part5-box-inner">
+                    <i class="fas fa-barcode"></i>
+                    <span>flowing milky way</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur <br>
+                        adipisicing elit. Delectus obcaecati</p>
+                </div>
             </div>
             <div class="part5-box">
+                <div class="part5-box-inner">
 
-                <i class="fab fa-connectdevelop"></i>
-                <span>flowing milky way</span>
-                <p>Lorem ipsum dolor, sit amet consectetur <br>
-                    adipisicing elit. Delectus obcaecati</p>
-
+                    <i class="fab fa-connectdevelop"></i>
+                    <span>flowing milky way</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur <br>
+                        adipisicing elit. Delectus obcaecati</p>
+                </div>
             </div>
             <div class="part5-box">
-
-                <i class="fab fa-buromobelexperte"></i>
-                <span>flowing milky way</span>
-                <p>Lorem ipsum dolor, sit amet consectetur <br>
-                    adipisicing elit. Delectus obcaecati</p>
-
+                <div class="part5-box-inner">
+                    <i class="fab fa-buromobelexperte"></i>
+                    <span>flowing milky way</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur <br>
+                        adipisicing elit. Delectus obcaecati</p>
+                </div>
             </div>
         </article>
     </section>
 
     <footer id="footer">
-            <div class="footer-top">
-                <div class="row cf">
-                    <ul class="footer-menu">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">guide</a></li>
-                        <li><a href="#">agreement</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                    </ul>
-                    <span class="admin">
-                         <a href="#">admin</a>
-                    </span>
-                </div>
+        <div class="footer-top">
+            <div class="row cf">
+                <ul class="footer-menu">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">guide</a></li>
+                    <li><a href="#">agreement</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+                <span class="admin">
+                    <a href="#">admin</a>
+                </span>
             </div>
-            <div class="footer-mid">
-                <div class="row cf">
-                    <div class="footer-left">
-                        <h3>Milky Way</h3>
-                        <p>Address: Seoul, Republic of Korea</p>
-                        <p>Owner: Arum Seo </p>
-                        <p>         
-                            <a href="mailto:isle1@daum.net">
-                                <i class="far fa-paper-plane"></i>
-                                Email: 1234@gmail.com
-                            </a>
-                        </p>
-                        <p>
-                            <a href="tel:010-3558-3646">
-                                <i class="fas fa-mobile"></i>
-                                TEL: 82+)010-1234-5678
-                            <a> 
+        </div>
+        <div class="footer-mid">
+            <div class="row cf">
+                <div class="footer-left">
+                    <h3>Milky Way</h3>
+                    <p>Address: Seoul, Republic of Korea</p>
+                    <p>Owner: Arum Seo </p>
+                    <p>
+                        <a href="mailto:isle1@daum.net">
+                            <i class="far fa-paper-plane"></i>
+                            Email: 1234@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:010-3558-3646">
+                            <i class="fas fa-mobile"></i>
+                            TEL: 82+)010-1234-5678
+                            <a>
                                 &nbsp; / &nbsp; FAX: 82+)032-1234-5678
-                            </p>
+                    </p>
 
-               
-                    </div>
-                    <div class="footer-right">
-                        <form action="#" method="post">
-                            <fieldset>
-                                <legend>
-                                    Family Site
-                                </legend>
-                                <select name="Family Site" id="">
-                                    <option value="none">--Select--</option>
-                                    <option value="pageA">pageA</option>
-                                    <option value="pageB">pageB</option>
-                                </select>
-                                <button type="submit">Move</button>
-                            </fieldset>
-                        </form>
-                        <p>
-                            Eager for Publisher &amp; Front-End Developer
-                        </p>
-                        <p>
-                            Ability: HTML CSS JS Jquery Vue.js 
-                        </p>
-                        <div class="icon-box">
-                            <a href="#"><i></i></a>
-                        </div>
+
+                </div>
+                <div class="footer-right">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>
+                                Family Site
+                            </legend>
+                            <select name="Family Site" id="">
+                                <option value="none">--Select--</option>
+                                <option value="pageA">pageA</option>
+                                <option value="pageB">pageB</option>
+                            </select>
+                            <button type="submit">Move</button>
+                        </fieldset>
+                    </form>
+                    <p>
+                        Eager for Publisher &amp; Front-End Developer
+                    </p>
+                    <p>
+                        Ability: HTML CSS JS Jquery Vue.js
+                    </p>
+                    <div class="icon-box">
+                        <a href="#"><i></i></a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bot">
-                <div class="row cf">
-                    <span>Copyright © 2020 Arum Seo</span>
-                </div>
+        </div>
+        <div class="footer-bot">
+            <div class="row cf">
+                <span>Copyright © 2020 Arum Seo</span>
             </div>
-      
+        </div>
+
     </footer>
-    
+
     <div class="icon-up">
         <a href="#header"><i class="fas fa-chevron-circle-up"></i></a>
     </div>
