@@ -376,9 +376,15 @@ font-family: 'Nanum Pen Script', cursive; */
     color: #fff;
     font-size: 12px;
     letter-spacing: 1px;
-
 }
 
+#footer a {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+#footer a:hover {
+    opacity: 1;
+}
 .footer-top {
     background: #4b4a4a;
     text-transform: uppercase;
@@ -472,10 +478,14 @@ font-family: 'Nanum Pen Script', cursive; */
 .icon-up {
     position: fixed;
     bottom: 10%;
-    right: 5%;
+    right: 13%;
     font-size: 35px;
     color: rgba(226, 155, 185, 0.5);
     z-index: 999999;
+    transition: ease-in-out 0.1s;
+}
+.icon-up:hover {
+    color: rgba(226, 155, 185, 1);
 }
 
 .loader {
