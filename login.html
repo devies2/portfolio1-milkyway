@@ -230,9 +230,9 @@
                         <fieldset class="cf">
                             <legend>Login Box</legend>
                             <label for="loginId">Email</label>
-                            <input type="text" name="loginId" id="loginId" placeholder="email@gmail.com" required><br>
+                            <input type="text" name="loginId" id="loginId" placeholder="email@gmail.com" onclick="this.placeholder=''" onblur="this.placeholder='email@gmail.com'" required><br>
                             <label for="loginPw">Password</label>
-                            <input type="password" name="loginPw" id="loginPw" placeholder="Enter your password" required><br>
+                            <input type="password" name="loginPw" id="loginPw" placeholder="Enter your password" onclick="this.placeholder=''" onblur="this.placeholder='Enter your password'" required><br>
                             <button type="submit">Login</button>
                         </fieldset>
                     </form>
