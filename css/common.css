@@ -66,16 +66,16 @@ font-family: 'Nanum Pen Script', cursive; */
 }
 
 /* 스크롤 올릴때 */
-#header {
+/* #header {
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 9999;
-}
+} */
 
 /* 스크롤 내릴때 */
-/* #header {
+#header {
     width: 100%;
     left: 0;
     top: 0;
@@ -83,7 +83,7 @@ font-family: 'Nanum Pen Script', cursive; */
     position: fixed;
     background: black;
     height: 120px;
-} */
+}
 
 .topmenu {
     padding: 10px 0;
@@ -159,29 +159,29 @@ font-family: 'Nanum Pen Script', cursive; */
     opacity: 1;
 }
 /* 스크롤 올릴때 */
-.logo_nav {position: relative; height: 100px;}
+/* .logo_nav {position: relative; height: 100px;} */
 /* 스크롤 내릴때 */
-/* .logo_nav {position: relative; height: 60px;} */
+.logo_nav {position: relative; height: 60px;}
 
 /* 스크롤 올릴때 */
-.logo_nav h1 div {
+/* .logo_nav h1 div {
     height: 80px;
     margin-top: 20px;
     animation: 0.8s logo infinite;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
-}
+} */
 
 /* 스크롤 내릴때 */
-/* .logo_nav h1 div {
+.logo_nav h1 div {
     height: 60px;
     animation: 0.8s logo infinite;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
     margin-top: 0px;
-} */
+}
 
 .logo_nav #nav {
     position: absolute; top: 50%; right: 0; transform: translateY(-50%);
@@ -193,7 +193,7 @@ font-family: 'Nanum Pen Script', cursive; */
     text-align: center;
 }
 /* 스크롤 올릴때 */
-.logo_nav #nav > ul > li > a {
+/* .logo_nav #nav > ul > li > a {
     display: inline-block;
     position: relative; 
     padding: 20px 30px 20px; 
@@ -201,9 +201,9 @@ font-family: 'Nanum Pen Script', cursive; */
     z-index: 9999;
     opacity: 0.9;
     transition: all 0.5s;
-}
+} */
 /* 스크롤 내릴때 */
-/* .logo_nav #nav > ul > li > a {
+.logo_nav #nav > ul > li > a {
     display: inline-block;
     position: relative; 
     margin-top: 20px;
@@ -212,7 +212,7 @@ font-family: 'Nanum Pen Script', cursive; */
     z-index: 9999;
     opacity: 0.8;
     transition: all 0.5s;
-} */
+}
 
 .logo_nav #nav > ul > li:hover > a {
     opacity: 1;
@@ -231,7 +231,7 @@ font-family: 'Nanum Pen Script', cursive; */
 } 
 
 /* 스크롤 올릴때 */
-.logo_nav #nav > ul > li > .depth2 {
+/* .logo_nav #nav > ul > li > .depth2 {
     display: none;
     position: absolute;
     top: 0;
@@ -240,10 +240,10 @@ font-family: 'Nanum Pen Script', cursive; */
     padding: 55px 0 30px;
     background-color: rgba(0,0,0,0.5);
     border-radius: 5px;
-}
+} */
 
 /* 스크롤 내릴때 */
-/* .logo_nav #nav > ul > li > .depth2 {
+.logo_nav #nav > ul > li > .depth2 {
     display: none;
     position: absolute;
     top: 0;
@@ -252,7 +252,7 @@ font-family: 'Nanum Pen Script', cursive; */
     padding: 60px 0 30px;
     background-color: rgba(0,0,0,1);
     border-radius: 5px;
-} */
+}
 
 .logo_nav #nav > ul > li > .depth2 > li {
     position: relative;
@@ -283,7 +283,7 @@ font-family: 'Nanum Pen Script', cursive; */
 }
 
 /* 스크롤 올릴때 */
-.logo_nav #nav > ul > li .detail {
+/* .logo_nav #nav > ul > li .detail {
     display: none;
     position: absolute;
     top: 100%;
@@ -292,9 +292,9 @@ font-family: 'Nanum Pen Script', cursive; */
     width: 700px;
     height: 210px;
     background-color: rgba(0,0,0,0.4);
-}
+} */
 /* 스크롤 내릴때 */
-/* .logo_nav #nav > ul > li .detail {
+.logo_nav #nav > ul > li .detail {
     display: none;
     position: absolute;
     top: 100%;
@@ -303,7 +303,7 @@ font-family: 'Nanum Pen Script', cursive; */
     width: 700px;
     height: 210px;
     background-color: rgba(0,0,0,1);
-} */
+}
 
 .logo_nav #nav > ul > li:last-child:hover .detail {
     display: block;
