@@ -7,6 +7,7 @@
 
 #section {
     position: relative; height: 950px; padding-top: 300px;
+    font-family: 'Nanum Gothic', sans-serif;
     background: url(../images/under-sky.jpg) no-repeat;
     background-size: cover;
     background-position: center 60%;   
