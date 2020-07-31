@@ -150,7 +150,7 @@
     font-weight: bold;
 }
 
-.login-box li:nth-of-type(6) label:not(.hobby) {
+.login-box li:nth-of-type(6) label:not(.favor) {
   margin: 0;
   padding: 0;
   margin-right: 15px;
@@ -160,7 +160,7 @@
   cursor: pointer;
 } 
 
-.login-box li:nth-of-type(6) label:not(.hobby):after {
+.login-box li:nth-of-type(6) label:not(.favor):after {
     content: '';
     background-image: url(../images/sprite-icon-27.png);
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@
     top: 1px;
 }
 
-.login-box li:nth-of-type(6) input:checked + label:not(.hobby):after {
+.login-box li:nth-of-type(6) input:checked + label:not(.favor):after {
     content: '';
     background-image: url(../images/sprite-icon-27.png);
     background-repeat: no-repeat;
