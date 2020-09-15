@@ -1,10 +1,12 @@
 @charset "utf-8";
-
+/* 
 @import url(./common.css);
-@import url(./reset.css);
+@import url(./reset.css); */
 
 /* 공통구역을 제외한 메인페이지 스타일 */
-
+#container, #containerBox {
+    height: 100%;
+} 
 #section {
     width: 100%;
     font-family: 'Nanum Gothic', sans-serif;
@@ -18,7 +20,7 @@
     width: 100%;
 }
 
-#section  .slide-inner > div:nth-child(1) {
+#section  .slide-inner  .slide1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,7 +30,7 @@
     height: 1080px; 
 
 }
-#section  .slide-inner > div:nth-child(2) {
+#section  .slide-inner .slide2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -38,7 +40,7 @@
     height: 1080px; 
 }
 
-#section  .slide-inner > div:nth-child(3) {
+#section  .slide-inner  .slide3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +64,7 @@
     cursor: default;
     letter-spacing: 10px;
 }
-
+/* 
 #section .slide-outer .arr {
     font-size: 70px;
     color: #fff;
@@ -106,7 +108,7 @@
 }
 #section .slide-outer .dot-box > a.active {
     opacity: 1;
-}
+} */
 
 #section .part1-wrap {
     padding: 100px 0;
@@ -166,14 +168,24 @@
     display: inline-block;
     padding: 10px;
 }
-
+#section .part1-wrap .tabContainer {
+    position: relative;
+    width: 565px;
+    height: 211px;
+}
 #section .part1-wrap .tabCont {
+    display: none;
     border: 1px solid #eaeaea;
     color: #999;
     padding: 20px;
     width: 565px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
+#section .part1-wrap .tabCont.on {
+    display: block;
+}
 #section .part1-wrap .tabCont colgroup col:nth-child(1) {
     width:75%
 }
